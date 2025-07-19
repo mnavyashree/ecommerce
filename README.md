@@ -45,6 +45,6 @@ Thanks to the creator for helping me understand how to build real-world layouts.
 
 If you have any suggestions or feedback, feel free to connect:
 
-- LinkedIn: [Your LinkedIn Profile](www.linkedin.com/in/m-navyashree-devi-a6883a322)
-- GitHub: [Your GitHub](https://github.com/mnavyashree)
+- LinkedIn: [my LinkedIn Profile](www.linkedin.com/in/m-navyashree-devi-a6883a322)
+- GitHub: [my GitHub](https://github.com/mnavyashree)
 
