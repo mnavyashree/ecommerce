@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+
+    <div class="product-details">
+        <img id="productImage" src="" alt="Product Image">
+        <h2 id="productTitle">Product Name</h2>
+        <p id="productPrice">$0.00</p>
+
+
+        <label for="size">Choose a size:</label>
+        <select id="size">
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+        </select>
+
+        <button id="addToCart">Add to Cart</button>
+    </div>
+
+    <script>
+        // Get product details from URL
+        const params = new URLSearchParams(window.location.search);
+        const productId = params.get("product");
+
+        // Product Data
+        const products = {
+            1: { name: "Summer Dress", price: "$78", image: "images/c1.png" },
+            2: { name: "Casual Shirt", price: "$67", image: "images/c2.png" }
+        };
+
+        // Update the page with product data
+        if (productId && products[productId]) {
+            document.getElementById("productTitle").textContent = products[productId].name;
+            document.getElementById("productPrice").textContent = products[productId].price;
+            document.getElementById("productImage").src = products[productId].image;
+        }
+        
+    </script>
+
+</body>
+</html>
+
+
